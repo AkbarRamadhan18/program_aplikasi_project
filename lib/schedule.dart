@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'schedule_detail.dart'; // Import the CourseInfo class from schedule_detail.dart
 
 class ScheduleScreen extends StatelessWidget {
   @override
@@ -34,28 +35,68 @@ class ScheduleScreen extends StatelessWidget {
             ),
           ),
           Divider(),
-          ScheduleItem(
-            mataKuliah: 'Administrasi Jaringan',
-            jam: '08.00 - 10.00',
-            icon: 'assets/ajs.png',
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) =>
+                        CourseInfo()), // Navigate to CourseInfo screen
+              );
+            },
+            child: ScheduleItem(
+              mataKuliah: 'Administrasi Jaringan',
+              jam: '08.00 - 10.00',
+              icon: 'assets/ajs.png',
+            ),
           ),
           Divider(),
-          ScheduleItem(
-            mataKuliah: 'Internet Of Things',
-            jam: '10.00 - 12.00',
-            icon: 'assets/iot.png',
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) =>
+                        CourseInfo()), // Navigate to CourseInfo screen
+              );
+            },
+            child: ScheduleItem(
+              mataKuliah: 'Internet Of Things',
+              jam: '10.00 - 12.00',
+              icon: 'assets/iot.png',
+            ),
           ),
           Divider(),
-          ScheduleItem(
-            mataKuliah: 'Kemananan Jaringan',
-            jam: '08.00 - 10.00',
-            icon: 'assets/keamanan_jaringan.png',
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) =>
+                        CourseInfo()), // Navigate to CourseInfo screen
+              );
+            },
+            child: ScheduleItem(
+              mataKuliah: 'Kemananan Jaringan',
+              jam: '08.00 - 10.00',
+              icon: 'assets/keamanan_jaringan.png',
+            ),
           ),
           Divider(),
-          ScheduleItem(
-            mataKuliah: 'Pemrograman Microservice',
-            jam: '10.00 - 12.00',
-            icon: 'assets/microservice.png',
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) =>
+                        CourseInfo()), // Navigate to CourseInfo screen
+              );
+            },
+            child: ScheduleItem(
+              mataKuliah: 'Pemrograman Microservice',
+              jam: '10.00 - 12.00',
+              icon: 'assets/microservice.png',
+            ),
           ),
           Divider(),
         ],
